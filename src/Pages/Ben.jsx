@@ -2,7 +2,7 @@ import { ben } from "../assets";
 
 const Ben = () => {
   return (
-    <div>
+    <div className=" justify-center flex">
       <img 
         src={ben}
       />

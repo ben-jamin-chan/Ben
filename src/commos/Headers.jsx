@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { headers } from "../contants";
 
 
-const Header = () => {
+const Headers = () => {
   return (
     <div>
       <nav className=" relative z-2 flex flex-row justify-center text-center p-8">
@@ -20,4 +20,4 @@ const Header = () => {
   )
 }
 
-export default Header;
+export default Headers;

@@ -1,10 +1,20 @@
-import React from 'react'
+import { footer } from "../contants";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className=' row-auto, col-span-3'>
-        <p>Contact us</p>
-        <p>About</p>
+    <div>
+      <nav>
+        {footer.map((item) => (
+          <Link 
+          className=" px-5 font-bold text-color-1 flex-grow"
+           key={item.id}
+           to={item.url}
+           >
+            {item.title}
+           </Link>
+      ))}
+      </nav>
     </div>
   )
 }
