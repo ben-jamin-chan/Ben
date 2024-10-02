@@ -18,6 +18,12 @@ export const headers = [
         icon: {eiffeltower},
         title: "Eiffel",
         url: "/eiffel"
+    },
+    {
+        id: "4",
+        icon: {eiffeltower},
+        title: "Blogs",
+        url: "/blogs"
     }
 ]
 

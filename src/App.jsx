@@ -7,6 +7,7 @@ import Footer from "./commos/Footer";
 import Leftfooter from './commos/Leftfooter';
 import Headers from "./commos/Headers";
 import About from './Pages/About';
+import BlogMain from './Pages/blogs/BlogMain';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/iphone" element={<Iphone />} />
           <Route path="/eiffel" element={<Eiffel />} />
           <Route path="/about" element={<About />} />
+          <Route path='blogs' element={<BlogMain />} />
         </Routes>
       <Footer />
       <Leftfooter />
