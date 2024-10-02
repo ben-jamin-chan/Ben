@@ -1,6 +1,6 @@
 import { suppliment, equipment, program } from "../assets";
 
-export default blogs [
+const blogs = [
 
     
     {
@@ -22,3 +22,5 @@ export default blogs [
         short: "Using supliment is the most important thing the workout"
     }
 ]
+
+export default blogs;

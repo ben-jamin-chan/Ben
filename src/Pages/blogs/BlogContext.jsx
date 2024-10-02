@@ -5,16 +5,24 @@ const BlogContext = () => {
 
   const [blogDetails, setBlogDetails] = useState([]);
 
-  useEffect(() =>{
-    BlogsData.blogs()
-    .then((result)=>{
-      const blogData = result || [];
-      setBlogDetails(blogData.reverse());
-    })
-    .catch((erorr)=>{
-      console.error("Error get data")
+  useEffect(() => {
+    const fetchBlogs = new Promise((resolve, reject) => {
+      if (BlogsData.length > 0) {
+        resolve(BlogsData);
+      } else {
+        reject("No blog data available");
+      }
     });
-  },[]);
+
+    fetchBlogs
+      .then((result) => {
+        const blogData = result || [];
+        setBlogDetails(blogData.reverse());
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
 
   return (
     <div className=" containern mt-50 lg:mt-52">
