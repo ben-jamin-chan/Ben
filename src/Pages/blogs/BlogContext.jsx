@@ -3,6 +3,8 @@ import BlogsData from "../../BlogsData";
 
 const BlogContext = () => {
 
+///this is for illustration
+
   const [blogDetails, setBlogDetails] = useState([]);
 
   useEffect(() => {
