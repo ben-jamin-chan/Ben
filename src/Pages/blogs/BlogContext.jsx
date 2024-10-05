@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import BlogsData from "../../BlogsData";
 
+
 const BlogContext = () => {
 
 ///this is for illustration

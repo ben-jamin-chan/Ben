@@ -42,11 +42,6 @@ export const footer = [
         id: "2",
         title: "Work",
         url: "work"
-    },
-    {
-        id: "3",
-        title: "Samples",
-        url: "samples"
     }
 ]
 
