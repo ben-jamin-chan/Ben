@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import BlogsData from "../../BlogsData";
 
-
 const BlogContext = () => {
 
 ///this is for illustration
@@ -31,8 +30,8 @@ const BlogContext = () => {
     <div className=" containern mt-50 lg:mt-52">
       {blogDetails.map((blog, index) => (
         <div className=" container" key={index}>
-          <img src={blog.pic} />
           <h1 className="h1">{blog.title}</h1>
+          <img src={blog.pic} />
           <p className=" mt-10">{blog.short}</p>
 
         </div>

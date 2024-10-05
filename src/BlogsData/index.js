@@ -11,13 +11,13 @@ const blogs = [
         id: "1",
         pic: program,
         title: "Program is it really important?",
-        short: "Using supliment is the most important thing the workout"
+        short: "Program is important to track your progress towards your goal"
     },
     {
         id: "2",
         pic: equipment,
         title: "Is equipment expensive?",
-        short: "Using supliment is the most important thing the workout"
+        short: "Expensive equipments play a big role in building muscles"
     }
 ]
 

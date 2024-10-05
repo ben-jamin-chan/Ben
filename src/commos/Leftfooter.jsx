@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+ import { Link } from "react-router-dom"
 import { leftFooter } from "../contants"
 
 const Leftfooter = () => {
@@ -16,4 +16,4 @@ const Leftfooter = () => {
   )
 }
 
-export default Leftfooter
+export default Leftfooter 
